@@ -343,11 +343,11 @@
           var gameTitleElem = document.getElementById('golly-game-title');
           if (gameApiResult.isPostseason == true) {
             var sp1 = gameApiResult.season + 1;
-            gameTitleElem.innerHTML = "Star III: " + gameApiResult.description + " <small>- S" + sp1 + "</small>";
+            gameTitleElem.innerHTML = "Star IV: " + gameApiResult.description + " <small>- S" + sp1 + "</small>";
           } else {
             var sp1 = gameApiResult.season + 1;
             var dp1 = gameApiResult.day + 1;
-            var descr = "Star III Cup: Season " + sp1 + " Day " + dp1;
+            var descr = "Star IV Cup: Season " + sp1 + " Day " + dp1;
             gameTitleElem.innerHTML = descr;
           }
 
@@ -417,7 +417,7 @@
 
           // Set the game title
           var gameTitleElem = document.getElementById('golly-game-title');
-          gameTitleElem.innerHTML = "Star III Map: " + mapApiResult.mapName;
+          gameTitleElem.innerHTML = "Star IV Map: " + mapApiResult.mapName;
 
           this.setTeamNames();
           this.setColors();
@@ -472,7 +472,7 @@
 
           // Set the game title
           var gameTitleElem = document.getElementById('golly-game-title');
-          gameTitleElem.innerHTML = "Star III Sandbox";
+          gameTitleElem.innerHTML = "Star IV Sandbox";
 
         } else {
           this.initialState1 = this.s1Default;
@@ -480,7 +480,7 @@
 
           // Set the game title
           var gameTitleElem = document.getElementById('golly-game-title');
-          gameTitleElem.innerHTML = "Star III Sandbox";
+          gameTitleElem.innerHTML = "Star IV Sandbox";
 
         }
         // No ability to specify referee state by URL, and no default state
